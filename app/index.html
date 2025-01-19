@@ -4,11 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funky</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <header>
+        <nav>
+            <a href="#">Over</a>
+            <a href="#">Projecten</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="student">
+            <img src="images/selfie.jpg" alt="selfie">
+            <div class="studenttext">
+                <div class="student_name">
+                    <div class="first_name">
+                        <h1>Nelson</h1>
+                    </div>
+                    <div class="last_name">
+                        <h1>Martinel</h1>
+                    </div>
+                </div>
+                <p>Student graduaat programmeren</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2>OVER</h2>
+            <div class="abouttext"> <!-- animation with <a> element -->
+                <p>Ik ben een enthousiaste student met een passie voor IT en probleemoplossing. Tijdens mijn opleiding
+                    <a href="#">Graduaat Programmeren</a> ontwikkel ik vaardigheden in verschillende programmeertalen
+                    zoals Javascript. Mijn interesse ligt vooral in het bouwen van efficiënte applicaties en het
+                    creëeren van gebruiksvriendelijke interfaces</p>
+                <p>In mijn vrije tijd werk ik graag aan persoonlijke projecten en blijf ik op de hoogte van de nieuwste
+                    technologieën. Mijn doel is om na mijn studie als programmeur aan de slag te gaan en innovatieve
+                    oplossingen te ontwikkelen die een verschil maken.</p>
+            </div>
+        </div>
+
+        <div class="knowledge">
+            <h3>Kennis</h3>
+            <div class="programming_languages">
+                <div class="html">
+                    <p>HTML</p>
+                    <div class="blocks">
+                        <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+                    </div>
+                </div>
+                <div class="css">
+                    <p>CSS</p>
+                    <div class="blocks">
+                        <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+                    </div>
+                </div>
+                <div class="javascript">
+                    <p>JavaScript</p>
+                    <div class="blocks">
+                        <p>.</p><p>.</p><p>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects_grid__container">
+            <div class="grid_wide">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_small">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_tall">
+                <h4>Portofolio</h4>
+            </div>
+            <div class="grid_tall">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_small">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_wide">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_tall">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_small">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_wide">
+                <div class="grid_tag"></div>
+            </div>
+            <div class="grid_small">
+                <div class="grid_tag"></div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h5>Contacteer ons</h5>
+            <form>
+                <div class="form__container">
+                    <label for="name">Naam</label>
+                    <input type="text" name="name" placeholder="Naam" required>
+                </div>
+                <div class="form__container">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" placeholder="john@doe.com" required>
+                </div>
+                <div class="form__container">
+                    <label for="reason">Reden</label>
+                    <select name="reason">
+                        <option value="select">--Geef reden</option>
+                        <option value="collaboration">Samenwerking</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="promotie">Promotie</option>
+                        <option value="business inquiries">Zakelijke aanvragen</option>
+                    </select>
+                </div>
+                <div class="form__container">
+                    <label for="message">Bericht</label>
+                    <input type="text" name="message" placeholder="Jouw bericht" required>
+                </div>
+
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; Arteveldehogeschool</p>
+        </footer>
+    </main>
 </body>
 
 </html>

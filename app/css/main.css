@@ -1,0 +1,150 @@
+* {
+  font-family: "Lora", serif;
+}
+
+body {
+  margin: 0.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 12rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #c022ff;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes slide_in {
+  0%, 100% {
+    background: #ff5100;
+  }
+  25% {
+    background: #88ff00;
+  }
+  50% {
+    background: #22aeff;
+  }
+  75%, 100% {
+    background: #c022ff;
+  }
+}
+
+nav a:hover::after {
+  width: 100%;
+  animation: slide_in 2s;
+}
+
+.student_name:hover .first_name {
+  transform: rotate(0.05turn) translateY(5rem) translateX(2rem);
+  transition: 0.2s ease;
+}
+
+.student_name:hover .last_name {
+  transform: rotate(-0.05turn) translateY(-5rem) translateX(2rem);
+  transition: 0.2s ease;
+}
+
+@keyframes color_animation {
+  0%, 100% {
+    background-color: #cc00ff;
+  }
+  50% {
+    background-color: #ff5722;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #23c1d6;
+  color: white;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  animation: color_animation 3s infinite;
+}
+
+.about h2 {
+  margin-bottom: 2rem;
+}
+
+.about p {
+  margin-bottom: 1.3rem;
+}
+
+.about a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.contact {
+  margin-bottom: 2rem;
+}
+
+.contact h5 {
+  margin-bottom: 2rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: 1px solid gray;
+  background-color: black;
+  color: lightgray;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  border: 1px solid gray;
+  background-color: black;
+  color: lightgray;
+}
