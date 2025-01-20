@@ -25,7 +25,7 @@
 
         <div class="student">
             <img src="images/selfie.jpg" alt="selfie">
-            <div class="studenttext">
+            <div class="student_text">
                 <div class="student_name">
                     <div class="first_name">
                         <h1>Nelson</h1>
@@ -39,10 +39,33 @@
         </div>
 
         <div class="about">
-            <h2>OVER</h2>
-            <div class="abouttext"> <!-- animation with <a> element -->
+            <div class="over">
+                <h2>OVER</h2>
+                <div class="over__large">
+                    <div class="over1">
+                        <h2>OVER</h2>
+                    </div>
+                    <div class="over2">
+                        <h2>OVER</h2>
+                    </div>
+                    <div class="over3">
+                        <h2>OVER</h2>
+                    </div>
+                    <div class="over4">
+                        <h2>OVER</h2>
+                    </div>
+                    <div class="over5">
+                        <h2>OVER</h2>
+                    </div>
+                    <div class="over6">
+                        <h2>OVER</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about_text"> <!-- animation with <a> element -->
                 <p>Ik ben een enthousiaste student met een passie voor IT en probleemoplossing. Tijdens mijn opleiding
-                    <a href="#">Graduaat Programmeren</a> ontwikkel ik vaardigheden in verschillende programmeertalen
+                    <a href="http://pgm.gent/">Graduaat Programmeren</a> ontwikkel ik vaardigheden in verschillende programmeertalen
                     zoals Javascript. Mijn interesse ligt vooral in het bouwen van efficiënte applicaties en het
                     creëeren van gebruiksvriendelijke interfaces</p>
                 <p>In mijn vrije tijd werk ik graag aan persoonlijke projecten en blijf ik op de hoogte van de nieuwste
@@ -75,42 +98,81 @@
             </div>
         </div>
 
-        <div class="projects_grid__container">
+        <div class="projects">
             <h4>Projects</h4>
-            <div class="grid_wide">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_small">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_tall">
-                <h5>Portofolio</h5>
-            </div>
-            <div class="grid_tall">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_small">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_wide">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_tall">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_small">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_wide">
-                <div class="grid_tag"></div>
-            </div>
-            <div class="grid_small">
-                <div class="grid_tag"></div>
+            <div class="project_grid__container">
+                <div class="grid">
+                    <div class="grid_wide">
+                        <img src="images/new_tech.jpg" alt="html">
+                        <div class="grid_tag"><p>App</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_small">
+                        <img src="images/mobile-app-development.jpg" alt="mobile">
+                        <div class="grid_tag"><p>App</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_tall">
+                        <img src="images/html.jpg" alt="new_tech">
+                        <div class="grid_tag"><p>Web</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_tall">
+                        <div class="grid_text">
+                            <h5>P</h5><h5>O</h5><h5>R</h5><h5>T</h5><h5>O</h5><h5>F</h5><h5>O</h5><h5>L</h5><h5>I</h5><h5>O</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_small">
+                        <img src="images/web_design.jpeg" alt="web_design">
+                        <div class="grid_tag"><p>Web</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_wide">
+                        <img src="images/JavaScript-programming-language.jpg" alt="javascript">
+                        <div class="grid_tag"><p>App</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_tall">
+                        <img src="images/workstation.jpg" alt="workstation">
+                        <div class="grid_tag"><p>Dev</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_small">
+                        <img src="images/phones.jpg" alt="phones">
+                        <div class="grid_tag"><p>Web</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_wide">
+                        <img src="images/vr.jpg" alt="vr">
+                        <div class="grid_tag"><p>App</p></div>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="grid_small">
+                        <img src="images/monitor.jpg" alt="monitor">
+                        <div class="grid_tag"><p>Dev</p></div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
         <div class="contact">
-            <h6>Contacteer ons</h6>
+            <div class="spinning_letters">
+                <h6>C</h6><h6>o</h6><h6>n</h6><h6>t</h6><h6>a</h6><h6>c</h6><h6>t</h6><h6>e</h6><h6>e</h6><h6>r</h6>
+                <div class="space"></div>
+                <h6>o</h6><h6>n</h6><h6>s</h6>
+            </div>
+            
             <form>
                 <div class="form__container">
                     <label for="name">Naam</label>
@@ -132,7 +194,7 @@
                 </div>
                 <div class="form__container">
                     <label for="message">Bericht</label>
-                    <input type="text" name="message" placeholder="Jouw bericht" required>
+                    <input class="message" type="text" name="message" placeholder="Jouw bericht" required>
                 </div>
 
                 <button type="submit">Verzenden</button>
